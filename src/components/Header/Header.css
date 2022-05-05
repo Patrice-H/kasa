@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 100px 0 100px;
+}
+.logo img {
+    height: 68px;
+}
+.menu li {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-left: 57px;
+    display: inline-block;
+}
