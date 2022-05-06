@@ -2,7 +2,7 @@
 import logo from '../../assets/general/logo.png';
 import './Header.css';
 
-const  Header = () => {
+const  Header = ({activePage, setActivePage}) => {
     return (
         <header>
             <div className='logo'>
@@ -10,8 +10,16 @@ const  Header = () => {
             </div>
             <nav className='menu'>
                 <ul>
-                    <li>Accueil</li>
-                    <li>A Propos</li>
+                    {
+                        activePage === 'home' ? 
+                        <li className='active-page' onClick={() => setActivePage('home')}>Accueil</li> : 
+                        <li onClick={() => setActivePage('home')}>Accueil</li>
+                    }
+                    {
+                        activePage === 'about' ? 
+                        <li className='active-page' onClick={() => setActivePage('about')}>A Propos</li> : 
+                        <li onClick={() => setActivePage('about')}>A Propos</li>
+                    }
                 </ul>
             </nav>
         </header>

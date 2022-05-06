@@ -12,4 +12,11 @@ header {
     font-weight: 500;
     margin-left: 57px;
     display: inline-block;
+    cursor: pointer;
+}
+.menu li:hover {
+    color: #ff6060;
+}
+.menu li.active-page {
+    text-decoration: underline;
 }
