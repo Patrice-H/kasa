@@ -1,0 +1,43 @@
+.banner {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 223px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+.banner.home-page {
+    margin-top: 59px;
+}
+.banner.about-page {
+    margin-top: 40px;
+}
+.banner-filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+.banner img {
+    object-fit: cover;
+}
+.banner img.about {
+    width: 110.5%;
+    object-position: -30px -281px;
+}
+.banner img.home {
+    width: 105%;
+    object-position: -20px -750px;
+}
+.slogan {
+    font-size: 3em;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 87px;
+    margin: 0;
+    z-index: 1;
+}
