@@ -6,7 +6,7 @@ import './Footer.css';
 const Footer = () => {
     return (
         <footer>
-            <img src={ logoFooter } alt='logo' />
+            <img src={ logoFooter } alt='logo-white' />
             <p>
                 <FontAwesomeIcon icon={ faCopyright } />
                 &nbsp;
