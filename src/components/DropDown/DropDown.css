@@ -1,13 +1,7 @@
-/*.drop-down {
-    font-size: 1.5em;
-    position: relative;
-    margin: 0 108px;
-}*/
 .drop-down-header {
     font-weight: 500;
     color: white;
     background-color: #ff6060;
-    /*position: absolute;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
