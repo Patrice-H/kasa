@@ -1,0 +1,33 @@
+.accomodation-sheet {
+    position: relative;
+    margin: 25px 0;
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.accomodation-sheet-filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.5));
+}
+.accomodation-cover-img {
+    height: 340px;
+    width: 340px;
+    object-fit: cover;
+
+    object-position: center center;
+}
+.accomodation-title {
+    font-size: 1.125em;
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    margin: 0;
+    z-index: 1;
+}
