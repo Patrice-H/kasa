@@ -2,10 +2,10 @@ import Header from "../../components/Header";
 import Error from "../../components/Error";
 import Footer from "../../components/Footer";
 
-const Error404 = ({activePage, setActivePage}) => {
+const Error404 = () => {
     return (
         <>
-            <Header activePage={activePage} setActivePage={setActivePage} />
+            <Header />
             <Error />
             <Footer />
         </>
