@@ -7,17 +7,17 @@ header {
 .logo img {
     height: 68px;
 }
-.menu li {
+.menu a {
     color: #ff6060;
     font-size: 1.5em;
     font-weight: 500;
     margin-left: 57px;
     display: inline-block;
-    cursor: pointer;
+    text-decoration: none;
 }
-.menu li:hover {
+.menu a:hover {
     color: black;
 }
-.menu li.active-page {
+.menu a.active-page {
     text-decoration: underline;
 }

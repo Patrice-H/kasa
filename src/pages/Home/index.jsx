@@ -1,8 +1,8 @@
-import Header from '../components/Header/Header';
-import Banner from "../components/Banner/Banner";
-import Thumb from '../components/Thumb/Thumb';
-import Footer from '../components/Footer/Footer';
-import { accomodations } from '../datas/accomodations';
+import Header from '../../components/Header';
+import Banner from "../../components/Banner";
+import Thumb from '../../components/Thumb';
+import Footer from '../../components/Footer';
+import { accomodations } from '../../datas/accomodations';
 import './Home.css';
 
 /*
@@ -17,11 +17,12 @@ fetch('../datas/accomodations.json')
         //data = await response.json();
     })
 */
-const Home = ({activePage, setActivePage}) => {
+const Home = () => {
+    const activePage = 'home';
 
     return (
         <>
-            <Header activePage={activePage} setActivePage={setActivePage} />
+            <Header activePage={activePage} />
             <Banner activePage={activePage} />
             <section className='gallery'>
                 <ul>
