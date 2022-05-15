@@ -7,11 +7,11 @@ import './Home.css';
 
 const Home = () => {
     const activePage = 'home';
-    const [data,setData]=useState([]);
+    const [datas,setDatas]=useState([]);
     const getData=()=>{
         fetch('./datas/accomodations.json')
         .then(response => response.json())
-        .then(allData => setData(allData))
+        .then(allData => setDatas(allData))
         .catch(err => console.log('Error : ', err))
     };
     useEffect(()=>{
@@ -24,11 +24,10 @@ const Home = () => {
             <Banner activePage={activePage} />
             <section className='gallery'>
                 <ul>
-                    {data && data.length>0 && data.map((accomodation) => (
+                    {datas && datas.length>0 && datas.map((accomodation) => (
                         <li key={ accomodation.id }>
                             <Thumb 
-                                title={ accomodation.title } 
-                                cover={ accomodation.cover }
+                                accomodation={accomodation}
                             />
                         </li>
                     ))}

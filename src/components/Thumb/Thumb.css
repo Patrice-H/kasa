@@ -1,6 +1,6 @@
 .accomodation-sheet {
+    display: block;
     position: relative;
-    margin: 25px 0;
     height: 340px;
     width: 340px;
     border-radius: 10px;

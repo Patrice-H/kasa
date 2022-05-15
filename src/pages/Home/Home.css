@@ -14,4 +14,5 @@
 }
 .gallery li {
     list-style-type: none;
+    margin: 25px 0;
 }

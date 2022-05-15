@@ -1,13 +1,16 @@
+import { Link } from 'react-router-dom';
 import './Thumb.css';
 
-const Thumb = ({title, cover}) => {
+const Thumb = ({accomodation}) => {
+
+    const pageLink = `/accomodation/${accomodation.id}`;
 
     return (
-        <div className='accomodation-sheet'>
-            <img src={ cover } alt='accomodation cover' className='accomodation-cover-img'/>
+        <Link to={pageLink} className='accomodation-sheet'>
+            <img src={ accomodation.cover } alt='accomodation cover' className='accomodation-cover-img'/>
             <div className='accomodation-sheet-filter'></div>
-            <p className='accomodation-title'>{ title }</p>
-        </div>
+            <p className='accomodation-title'>{ accomodation.title }</p>
+        </Link>
     );
 }
 
