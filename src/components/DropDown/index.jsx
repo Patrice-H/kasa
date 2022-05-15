@@ -6,28 +6,21 @@ import './DropDown.css';
 
 const DropDown = ({name, content}) => {
 
-    let ddContentsClass = 'drop-down-contents hidden';
+    let ddContentsClass = 'drop-down-contents';
     const [isOpen, setIsOpen] = useState(false);
-    
-    if (isOpen) {
-        ddContentsClass = 'drop-down-contents';
-    } else {
-        ddContentsClass = 'drop-down-contents hidden';
-    }
+    if (!isOpen) ddContentsClass += ' hidden';
 
     return (
         <>
             <div className='drop-down-header'>
                 <p className='drop-down-name'>{ name }</p>
-                {
-                    isOpen ?
-                    <p className='drop-down-btn' onClick={() => setIsOpen(false)}>
-                        <FontAwesomeIcon icon={ faChevronUp } />
-                    </p> :
-                    <p className='drop-down-btn' onClick={() => setIsOpen(true)}>
-                        <FontAwesomeIcon icon={ faChevronDown } />
-                    </p>
-                }  
+                <p className='drop-down-btn' onClick={() => setIsOpen(!isOpen)}>
+                {isOpen ? (
+                    <FontAwesomeIcon icon={ faChevronUp } />
+                ) : (
+                    <FontAwesomeIcon icon={ faChevronDown } />
+                )}
+                </p>
             </div>
             <div className={ ddContentsClass }>{ content }</div>
         </>
