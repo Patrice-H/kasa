@@ -1,0 +1,10 @@
+.tagsBar span {
+    color: white;
+    font-size: 0.875em;
+    font-weight: 500;
+    background-color: #ff6060;
+    height: 25px;
+    padding: 3px 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
