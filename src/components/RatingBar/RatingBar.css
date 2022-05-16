@@ -1,0 +1,11 @@
+.rating {
+    font-size: 1.875em;
+    text-align: right;
+    margin-top: 7px;
+}
+.star-on {
+    color: #ff6060;
+}
+.star-off {
+    color: #e3e3e3;
+}
