@@ -11,7 +11,7 @@ const DropDown = ({name, content}) => {
     if (!isOpen) ddContentsClass += ' hidden';
 
     return (
-        <>
+        <div className='drop-down'>
             <div className='drop-down-header'>
                 <p className='drop-down-name'>{ name }</p>
                 <p className='drop-down-btn' onClick={() => setIsOpen(!isOpen)}>
@@ -22,8 +22,14 @@ const DropDown = ({name, content}) => {
                 )}
                 </p>
             </div>
-            <div className={ ddContentsClass }>{ content }</div>
-        </>
+            <div className={ ddContentsClass }>
+                <ul className='container'>
+                {content.map((line, index) => (
+                    <li key={`${line}-${index}`}>{line}</li>
+                )) }
+                </ul>
+            </div>
+        </div>
     );
 }
 

@@ -5,7 +5,7 @@
     margin: 0 108px;
     padding: 0;
 }
-.about-content li {
+li.about-drop-down {
     margin-top: 30px;
     list-style: none;
     font-size: 1.5em;

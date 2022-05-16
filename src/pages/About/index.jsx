@@ -15,10 +15,10 @@ const About = () => {
             <section className='about-content'>
                 <ul>
                     {dropDownsList.map((dropDown) => (
-                        <li key={ dropDown.id } className='drop-down'>
+                        <li key={ dropDown.id } className='about-drop-down'>
                             <DropDown 
                                 name={ dropDown.name } 
-                                content={ dropDown.content }
+                                content={ [dropDown.content] }
                             />
                         </li>
                     ))}

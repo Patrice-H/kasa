@@ -1,3 +1,6 @@
+.drop-down {
+    width: 100%;
+}
 .drop-down-header {
     font-weight: 500;
     color: white;
@@ -30,4 +33,11 @@
 }
 .drop-down-contents.hidden {
     display: none;
+}
+.drop-down-contents ul.container {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
 }
