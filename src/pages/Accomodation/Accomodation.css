@@ -1,0 +1,36 @@
+.accomodation {
+    position: relative;
+    margin: 20px 100px;
+}
+.accomodation .carrousel {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    height: 415px;
+    background-color: green;
+}
+.accomodation h1 {
+    color: #ff6060;
+    font-size: 36px;
+    font-weight: 500;
+    width: 60%;
+    margin: 30px 0 0;
+}
+.accomodation p.location {
+    color: #ff6060;
+    font-size: 18px;
+    font-weight: 500;
+}
+.accomodation .content {
+    color: white;
+    font-size: 1.125em;
+    font-weight: 500;
+    margin: 30px 0;
+    display: flex;
+    gap: 75px;
+}
+.accomodation .informations {
+    position: absolute;
+    top: 425px;
+    right: 0;
+}
