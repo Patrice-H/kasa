@@ -12,3 +12,12 @@ li.about-drop-down {
     position: relative;
     width: 100%;
 }
+
+@media (max-width:992px) {
+    .about-content {
+        margin: 30px 40px 0;
+    }
+    .about-content ul {
+        margin: 0 40px;
+    }
+}

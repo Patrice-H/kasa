@@ -41,3 +41,22 @@
     margin: 0;
     z-index: 1;
 }
+
+@media (max-width:992px) {
+    .banner {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .banner img.about {
+        object-position: -30px -151px;
+    }
+    .banner.home-page {
+        margin-top: 40px;
+    }
+    .banner img.home {
+        object-position: -30px -550px;
+    }
+    .slogan {
+        font-size: 2.25em;
+    }
+}
