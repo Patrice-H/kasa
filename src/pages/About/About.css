@@ -21,3 +21,16 @@ li.about-drop-down {
         margin: 0 40px;
     }
 }
+
+@media (max-width:768px) {
+    .about-content {
+        margin: 20px;
+    }
+    .about-content ul {
+        margin: 0;
+    }
+    li.about-drop-down {
+        font-size: 0.875em;
+        margin-top: 20px;
+    }
+}

@@ -47,6 +47,9 @@
         margin-left: 50px;
         margin-right: 50px;
     }
+    .banner.about-page {
+        margin-top: 20px;
+    }
     .banner img.about {
         object-position: -30px -151px;
     }
@@ -58,5 +61,32 @@
     }
     .slogan {
         font-size: 2.25em;
+    }
+}
+
+@media (max-width:768px) {
+    .banner {
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+    }
+    .banner img.about {
+        object-position: -30px -10px;
+    }
+    .banner.home-page {
+        margin-top: 20px;
+        height: 111px;
+    }
+    .banner img.home {
+        object-position: -10px -380px;
+    }
+    .slogan {
+        font-size: 1.5em;
+        text-align: left;
+        top: 25px;
+        margin-left: 20px;
+    }
+    .slogan span:last-child {
+        display: block;
     }
 }

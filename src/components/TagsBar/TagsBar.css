@@ -8,3 +8,14 @@
     margin-right: 10px;
     border-radius: 10px;
 }
+
+@media (max-width:768px) {
+    .tagsBar span {
+        font-size: 0.625em;
+        display: inline-block;
+        height: 18px;
+        line-height: 18px;
+        padding: 0 20px;
+        margin-bottom: 5px;
+    }
+}

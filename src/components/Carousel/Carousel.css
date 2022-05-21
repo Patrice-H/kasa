@@ -1,7 +1,5 @@
 .carousel {
     color: white;
-    font-size: 24px;
-    font-weight: bold;
     position: relative;
     height: 415px;
     border-radius: 25px;
@@ -14,21 +12,44 @@
     object-position: center;
 }
 .carousel .btn-previous {
-    font-size: 79px;
+    font-size: 5em;
     position: absolute;
     top: 145px;
     left: 28px;
 }
 .carousel .btn-next {
-    font-size: 79px;
+    font-size: 5em;
     position: absolute;
     top: 145px;
     right: 28px;
 }
 .carousel .displayed-picture {
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 500;
     display: block;
     width: fit-content;
     margin: -50px auto;
+}
+
+@media (max-width:768px) {
+    .carousel {
+        height: 255px;
+        border-radius: 10px;
+    }
+    .carousel img {
+        height: 255px;
+    }
+    .carousel .btn-previous {
+        font-size: 20px;
+        top: 117px;
+        left: 8px;
+    }
+    .carousel .btn-next {
+        font-size: 20px;
+        top: 117px;
+        right: 8px;
+    }
+    .carousel .displayed-picture {
+        display: none;
+    }
 }

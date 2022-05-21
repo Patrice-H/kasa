@@ -39,13 +39,13 @@ const Accomodation = () => {
                     <h1>{accomodation.title}</h1>
                     <p className='location'>{accomodation.location}</p>
                     <TagsBar tags={accomodation.tags}/>
-                    <div className='content'>
-                        <DropDown name='Description' content={[accomodation.description]} />
-                        <DropDown name='Équipements' content={accomodation.equipments} />
-                    </div>
                     <div className='informations'>
                         <Profile host={accomodation.host} />
                         <RatingBar rating={accomodation.rating} />
+                    </div>
+                    <div className='content'>
+                        <DropDown name='Description' content={[accomodation.description]} />
+                        <DropDown name='Équipements' content={accomodation.equipments} />
                     </div>
                 </section>  
             ))}

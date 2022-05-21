@@ -15,6 +15,13 @@
     font-size: 1.125em;
     margin-top: 182px;
 }
+.backlink a {
+    color: #ff6060;
+}
+.backlink a:hover {
+    color: black;
+}
+
 @media (max-width:992px) {
     .error404 p.big-number {
         font-size: 12em;
@@ -22,5 +29,18 @@
     }
     .error404 p.text {
         font-size: 1.625em;
+    }
+}
+
+@media (max-width:678px) {
+    .error404 p.big-number {
+        font-size: 6em;
+    }
+    .error404 p.text {
+        font-size: 1.125em;
+        margin: 20px 40px;
+    }
+    .error404 p.backlink {
+        font-size: 0.875em;
     }
 }

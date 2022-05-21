@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Error.css';
 
 const Error = () => {
@@ -5,7 +6,9 @@ const Error = () => {
         <section className='error404'>
             <p className='big-number'>404</p>
             <p className='text'>Oups! La page que vous demandez n'existe pas.</p>
-            <p className='backlink'>Retourner sur la page d’accueil</p>
+            <p className='backlink'>
+                <Link to='/'>Retourner sur la page d’accueil</Link>
+            </p>
         </section>
     );
 }

@@ -3,9 +3,23 @@
     text-align: right;
     margin-top: 7px;
 }
+.rating span {
+    margin: 0 0 0 10px;
+}
 .star-on {
     color: #ff6060;
 }
 .star-off {
     color: #e3e3e3;
+}
+
+@media (max-width:768px) {
+    .rating {
+        font-size: 1em;
+        margin: 0;
+        order: 1;
+    }
+    .rating span {
+        margin: 0 5px 0 0;
+    }
 }

@@ -17,7 +17,10 @@ const Banner = ({activePage}) => {
             {
                 activePage === 'home' ?
                 <>
-                <p className='slogan'>Chez vous, partout et ailleurs</p>
+                <p className='slogan'>
+                    <span>Chez vous, </span>
+                    <span>partout et ailleurs</span>
+                </p>
                 <img src={homeBannerImg} alt='Home page banner' className='home' />
                 </>: 
                 <img src={aboutBannerImg} alt='About page banner' className='about' />

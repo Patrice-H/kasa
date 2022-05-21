@@ -31,6 +31,7 @@
     margin: 0 20px;
     z-index: 1;
 }
+
 @media (max-width:992px) {
     .accomodation-sheet {
         height: 335px;
@@ -39,5 +40,17 @@
     .accomodation-cover-img {
         height: 335px;
         width: 335px;
+    }
+}
+
+@media (max-width:768px) {
+    .accomodation-sheet {
+        max-height: 255px;
+        max-width: 335px;
+        width: 100%;
+    }
+    .accomodation-cover-img {
+        height: 100%;
+        width: 100%;
     }
 }

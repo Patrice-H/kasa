@@ -9,3 +9,13 @@ footer {
 footer p {
     margin-top: 35px;
 }
+
+@media (max-width:768px) {
+    footer {
+        margin-top: 0;
+        font-size: 0.75em;
+    }
+    footer p {
+        margin-top: 25px;
+    }
+}
