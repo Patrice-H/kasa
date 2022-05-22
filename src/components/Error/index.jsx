@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
 import './Error.css';
 
+/**
+ * Component that returns an error text and a link to return to home page
+ * 
+ * @component
+ * @returns A function that returns the component
+ */
 const Error = () => {
     return (
         <section className='error404'>

@@ -4,6 +4,14 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import './DropDown.css';
 
+/**
+ * Component that returns a explanation drop down with a open/close button
+ * 
+ * @component
+ * @param {string} name - The name of drop down
+ * @param {string} content - the content of drop down
+ * @returns A function that returns the component
+ */
 const DropDown = ({name, content}) => {
 
     let ddContentsClass = 'drop-down-contents';

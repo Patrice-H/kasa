@@ -1,9 +1,16 @@
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import './Carousel.css';
-import { useState } from "react";
 
+/**
+ * Component that returns a images gallery with two scrollable buttons
+ * 
+ * @component
+ * @param {string[]} pictures - The array of picture links
+ * @returns A function that returns the component
+ */
 const Carousel = ({pictures}) => {
 
     const [pictureNumber, setPictureNumber] = useState(0);

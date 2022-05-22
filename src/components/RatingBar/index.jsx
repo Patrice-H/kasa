@@ -2,6 +2,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import './RatingBar.css';
 
+/**
+ * Component that returns a rating bar based on a rating number
+ * 
+ * @component
+ * @param {number} rating - The rating number
+ * @returns A function that returns the component
+ */
 const RatingBar = ({rating}) => {
 
     const nbRate = parseInt(rating);

@@ -3,6 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 import './Footer.css';
 
+/**
+ * Component that returns a logo and a copyright text
+ * 
+ * @component
+ * @returns A function that returns the component
+ */
 const Footer = () => {
     return (
         <footer>

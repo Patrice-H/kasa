@@ -2,6 +2,13 @@ import homeBannerImg from '../../assets/general/home.jpg';
 import aboutBannerImg from '../../assets/general/about.jpg';
 import './Banner.css';
 
+/**
+ * Component that returns an image and a text based on the page displayed
+ * 
+ * @component
+ * @param {string} activePage - The active page
+ * @returns A function that returns the component
+ */
 const Banner = ({activePage}) => {
     let bannerClasses = 'banner';
     
