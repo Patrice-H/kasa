@@ -5,6 +5,16 @@ import Thumb from '../../components/Thumb';
 import Footer from '../../components/Footer';
 import './Home.css';
 
+/**
+ * Component that assembles multiple components and returns the home page
+ * 
+ * @component
+ * @see {@link Header}
+ * @see {@link Banner}
+ * @see {@link Thumb}
+ * @see {@link Footer}
+ * @returns A function that returns the page
+ */
 const Home = () => {
     const activePage = 'home';
     const [datas,setDatas]=useState([]);

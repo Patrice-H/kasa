@@ -1,33 +1,46 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import React,{useState,useEffect} from 'react';
-import {useNavigate} from "react-router-dom"
+import {useNavigate, useParams} from "react-router-dom"
 import Header from "../../components/Header";
+import Carousel from '../../components/Carousel';
 import TagsBar from '../../components/TagsBar';
 import DropDown from '../../components/DropDown';
 import Profile from '../../components/Profile';
 import RatingBar from '../../components/RatingBar';
 import Footer from '../../components/Footer';
 import './Accomodation.css';
-import Carousel from '../../components/Carousel';
 
+/**
+ * Component that assembles multiple components and returns the accomodation page
+ * 
+ * @component
+ * @see {@link Header}
+ * @see {@link Carousel}
+ * @see {@link TagsBar}
+ * @see {@link Profile}
+ * @see {@link RatingBar}
+ * @see {@link DropDown}
+ * @see {@link Footer}
+ * @returns A function that returns the page
+ */
 const Accomodation = () => {
     
-    const pathname = window.location.pathname.split('/');
-    const accomodationId = pathname[pathname.length - 1];
-    const [data,setData]=useState([]);
+    const { accomodationId } = useParams();
+    const [data,setData] = useState([]);
     const navigate = useNavigate();
 
     const getData=()=>{
         fetch('../datas/accomodations.json')
         .then(response => response.json())
         .then(allData => {
-            const result = allData.find(Data => Data.id === accomodationId)
+            const result = allData.find(Data => Data.id === accomodationId )
             typeof result === 'undefined' ? navigate('/error404') : setData([result])
         })
         .catch(err => console.log('Error : ', err))
     };
+
     useEffect(()=>{
         getData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

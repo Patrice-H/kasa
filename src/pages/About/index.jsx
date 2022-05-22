@@ -5,6 +5,16 @@ import Footer from "../../components/Footer";
 import { dropDownsList } from '../../datas/dropDownsList';
 import './About.css';
 
+/**
+ * Component that assembles multiple components and returns the about page
+ * 
+ * @component
+ * @see {@link Header}
+ * @see {@link Banner}
+ * @see {@link DropDown}
+ * @see {@link Footer}
+ * @returns A function that returns the page
+ */
 const About = () => {
     const activePage = 'about';
 
