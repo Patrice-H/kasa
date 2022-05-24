@@ -29,7 +29,7 @@ const Accomodation = () => {
     const navigate = useNavigate();
 
     const getData=()=>{
-        fetch('../datas/accomodations.json')
+        fetch('./datas/accomodations.json')
         .then(response => response.json())
         .then(allData => {
             const result = allData.find(Data => Data.id === accomodationId )
