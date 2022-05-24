@@ -16,12 +16,14 @@
     position: absolute;
     top: 145px;
     left: 28px;
+    cursor: pointer;
 }
 .carousel .btn-next {
     font-size: 5em;
     position: absolute;
     top: 145px;
     right: 28px;
+    cursor: pointer;
 }
 .carousel .displayed-picture {
     font-size: 1.125em;

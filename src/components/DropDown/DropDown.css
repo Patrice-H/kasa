@@ -34,6 +34,9 @@
 .drop-down-contents.hidden {
     display: none;
 }
+.drop-down-btn {
+    cursor: pointer;
+}
 .drop-down-contents ul.container {
     margin: 0;
     padding: 0;
